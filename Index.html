@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym "У Тьоми"</title>
+    <style>
+        /* Основні стилі для загальних блоків */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f20505;
+        }
+
+        /* Стиль для верхнього блоку */
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Стиль для навігаційного меню */
+        .nav {
+            background-color: #444;
+            overflow: hidden;
+        }
+
+        .nav ul {
+            list-style-type: none; /* Прибираємо маркери списку */
+            margin: 0;
+            padding: 0;
+            display: flex; /* Вистроюємо елементи горизонтально */
+        }
+
+        .nav ul li {
+            flex: 1;
+        }
+
+        .nav a {
+            display: block;
+            color: hwb(57 2% 4%);
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        .nav a:hover {
+            background-color: #398641; /* Зміна кольору при наведенні */
+        }
+
+        .nav a:active {
+            background-color: #398641; /* Зміна кольору при натисканні */
+        }
+
+        /* Основна структура сторінки */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 20px;
+        }
+
+        /* Стиль для бокової колонки */
+        .sidebar {
+            flex: 1;
+            max-width: 200px;
+            padding: 20px;
+            background-color: #fbff00;
+            margin-right: 20px;
+            border-radius: 8px;
+        }
+
+        /* Стиль для основного контенту */
+        .content {
+            flex: 3;
+            padding: 20px;
+            background-color: #feed00;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Стиль для таблиць */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #fa0202;
+        }
+
+        /* Стиль для нижнього блоку */
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Верхній блок -->
+    <div class="header">
+        <h1>Вітаємо вас на нашому сайті</h1>
+    </div>
+
+    <!-- Блок навігації -->
+    <div class="nav">
+        <ul>
+            <li><a href="#home">Головна</a></li>
+            <li><a href="#about">Про нас</a></li>
+            <li><a href="#services">Послуги</a></li>
+            <li><a href="#contact">Контакти</a></li>
+        </ul>
+    </div>
+
+    <!-- Основний контейнер -->
+    <div class="container">
+        
+        <!-- Бокова колонка -->
+        <div class="sidebar">
+            <h3>Навігація по сайту</h3>
+            <ul>
+                <li><a href="#link1">Абонементи</a></li>
+                <li><a href="#link2">Спортивні добавки</a></li>
+                <li><a href="#link3">Програма тренувань</a></li>
+            </ul>
+        </div>
+
+        <!-- Основний контент -->
+        <div class="content">
+            <h2>Тут ти знайдеш</h2>
+            <ul>
+                <li>Абонементи</li>
+                <li>Спортивні добавки</li>
+                <li>Програму тренувань</li>
+            </ul>
+
+            <h2>Тут ти можеш обрати</h2>
+            <table border="2">
+                <tr>
+                    <th>Абонементи</th>
+                    <th>Програми тренувань</th>
+                </tr>
+                <tr>
+                    <td>На місяць</td>
+                    <td>З тренером</td>
+                </tr>
+                <tr>
+                    <td>На рік</td>
+                    <td>Без тренера</td>
+                </tr>
+            </table>
+
+            <h2>Наші користувачі</h2>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStxWOSVafaW9QQGeY2OcwxJHB66g03PFs5Ow&s/150" alt="Наші користувачі" />
+
+            <h2>Відео</h2>
+            <iframe width="1280" height="720" src="https://www.youtube.com/embed/UWRTIFDmQwk" title="Next Fitness Hall: Створюйте кращу версію себе" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- Нижній блок -->
+    <div class="footer">
+        <p>Звязок з менеджером</p>
+    </div>
+
+    <script src="scripts.js"></script>
+
+</body>
+</html>
